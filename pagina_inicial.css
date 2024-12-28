@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Passion+One:wght@400;700;900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+header{
+    .logo{
+        font-family: "italianno";
+        color: #121112;
+        font-size: 4em;
+        text-align: center;
+        display: block;
+    }
+    
+    .menu-res{
+        width: 10px;
+    }
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+main{     
+        background-image: url("https://s3-alpha-sig.figma.com/img/a126/8af8/57ca26321dce109120cc118a1606e774?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TzfRRs9KnPobP9EFpxXeQ~iH0nlNgefCwfliNfR3q4Ff7BIs8zSsaz4Y9CCUmcIDWLq~6UXHSfoTJucrriUrbDmkU0OKc0~iLkggFgzlAej~hkPjyrHX9ntz1JOkvyxmU3oaEK-xCjieKj0A-2P6OKOLJ1SY0pupVvxTe4drlnS~XaDzfFEmCZ~cr5JEw631aCS0V8sjHcHEnVmY6EON8A8940eeJUFPeeSdx9jILJzC0-~pESCxIp5RFy2~aNG9N1g77jcAZ2T3oHJhL9nCMthkB5-7uTYZ92yeKAuC4esdXoP-wKsjY9Bf8jZwy0uhIWq22Fs25-uQJeGX8H5Bfw__");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 5000px;
+        h1{
+            color: white;
+            text-align: center;
+            padding: 300px 0px;
+        }
+
+    section{
+        background-color: white;
+    }
+}
+

@@ -45,7 +45,7 @@ main{
     font-family: "jost", Arial, Helvetica, sans-serif;
     
     section#sec1{
-        background-image: url("img/fundo.png");
+        background-image: url("/img/fundo.png");
         background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;

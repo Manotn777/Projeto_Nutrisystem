@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastro - Nutri System</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/pagina_de_cadastro.css'>
+</head>
+<body>
+    <main>
+        <div class="telalogin">
+            <form action="">
+                <div class="titulo">CADASTRO</div>
+                <section class="divisoria">
+                    <div>
+                        <div>
+                            <label> Nome completo:</label> <br>
+                            <input type="text" name="nome">
+                        </div>
+                        <div>
+                            <label>E-mail:</label> <br>
+                            <input type="email" name="email">
+                        </div>
+                        <div>
+                            <label>Senha:</label> <br>
+                            <input type="password" name="senha">
+                        </div>
+                    </div>
+                    <div class="parte">
+                        <div>
+                            <label>Data de nascimento:</label> <br>
+                            <input type="date" name="data">
+                        </div>
+                        <div>
+                            <label> Nacionalidade:</label> <br>
+                            <select id="nacionalidade">
+                                <option selected value=""> Selecione</option>
+                                <option>Norte-americano</option>
+                                <option>Sul-americano</option>
+                                <option>Oceânico</option>
+                                <option>Asiático</option>
+                            </select>
+                        </div>
+                        <div class="tel"> 
+                            <label>Número de telefone:</label>
+                            <input type="number" name="numero" id="tel">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <label>
+                        O que você tem interesse em ver no Nutri System?
+                    </label>
+                    <select name="interesses" id="interesse">
+                        <option selected value=""> Selecione</option>
+                        <option value="desafios"> Desafios</option>
+                        <option value="receitas"> Receitas</option>
+                        <option value="imc"> IMC</option>
+                        <option value="dietas"> Registras minhas dietas</option>
+                        <option value="treinos"> Registrar meus treinos</option>
+                        <option value="calorias"> Caloria dos alimentos</option>
+                    </select>
+                </section>
+                <div class="caixa_botao">
+                    <input type="button" value="Enviar" name="enviar" class="botao" onclick="cadastro()">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="/script/cadastro.js"></script>
+</body>
+</html>

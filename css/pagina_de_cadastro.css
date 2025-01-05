@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(/img/kuay-jab-cup-with-pork-meatball-pork-cracker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.telalogin{
+    width: 45vw;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0 0 20px black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.divisoria{
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.divisoria div{
+    margin: 5px 0px;
+}
+
+@media screen and (max-width: 880px) {
+
+    .telalogin{
+        width: 60vw;
+    }
+
+    .divisoria{
+      display: block;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    select{
+        width: 90%;
+    }
+  }
+
+section{
+    margin: 10px 0px;
+}
+
+section > label{
+    display: block;
+}
+
+.tel>label, .tel>input{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+label{
+    padding-bottom: 20px;
+}
+
+.caixa_botao{
+    width: 30%;
+    margin: 20px auto;
+}
+
+.botao{
+    width: 100%;
+    line-height: 50px;
+    text-align: center; 
+    padding: 5px;
+    cursor: pointer;
+}

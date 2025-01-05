@@ -1,5 +1,70 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
+div{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(imgs/kuay-jab-cup-with-pork-meatball-pork-cracker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.telalogin{
+    display: block;
+    width: 30%;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0 0 20px black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.titulo{
+    text-align: center;
+    display: block;
+    transition: background-color 3s ease;
+}
+
+.titulo:hover{
+    transform: scale(1, 1.5);
+    animation-duration: 4s;
+    background-color: rgb(150, 197, 149);
+}
+
+label{
+    margin-bottom: 10px;
+    animation-name: anilabel;
+    animation-duration: 4s;
+}
+
+
+@keyframes anilabel{
+    0% {color: blueviolet;}
+    40% {color: red;}
+    80% {color: yellowgreen;}
+}
+
+input[type=button]{
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px;
+    animation-name: anibutton;
+    animation-duration: 4s;
+}
+
+@keyframes anibutton{
+    0% {background-color: blueviolet;}
+    40% {background-color: red;}
+    80% {background-color: yellowgreen;}
+    
+}
+
+

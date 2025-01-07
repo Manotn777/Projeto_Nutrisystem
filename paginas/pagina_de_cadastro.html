@@ -10,41 +10,63 @@
 <body>
     <main>
         <div class="telalogin">
-            <form action="">
+            <form id="form">
                 <div class="titulo">CADASTRO</div>
                 <section class="divisoria">
                     <div>
                         <div>
-                            <label> Nome completo:</label> <br>
+                            <label> Nome completo:</label>
                             <input type="text" name="nome">
                         </div>
                         <div>
-                            <label>E-mail:</label> <br>
-                            <input type="email" name="email">
+                            <label>E-mail:</label>
+                            <input type="email" name="email" class="validacao" oninput="validaEmail()">
+                            <div>
+                                <span class="mensagem">Coloque um email válido</span>
+                            </div>
                         </div>
                         <div>
-                            <label>Senha:</label> <br>
-                            <input type="password" name="senha">
+                            <label>Senha:</label>
+                            <input type="password" name="senha" class="validacao" oninput="validaTamanho()">
+                            <div>
+                                <span class="mensagem">A senha deve ter no mínimo 8 dígitos</span>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Confirmar senha:</label>
+                            <input type="password" name="senha" class="validacao" oninput="validaSenha()">
+                            <div>
+                                <span class="mensagem">Senhas devem ser conpatíveis</span>
+                            </div>
                         </div>
                     </div>
                     <div class="parte">
                         <div>
-                            <label>Data de nascimento:</label> <br>
+                            <label>Data de nascimento:</label>
                             <input type="date" name="data">
                         </div>
                         <div>
-                            <label> Nacionalidade:</label> <br>
-                            <select id="nacionalidade">
-                                <option selected value=""> Selecione</option>
-                                <option>Norte-americano</option>
-                                <option>Sul-americano</option>
-                                <option>Oceânico</option>
-                                <option>Asiático</option>
-                            </select>
+                            <label> Sexo:</label>
+                            <div class="sexo">
+                                <input type="radio" name="sexo" id="M" value="Masculino">
+                                <label for="M">Masculino</label>
+                                <input type="radio" name="sexo" id="F">
+                                <label for="F">Feminino</label>
+                            </div>
                         </div>
                         <div class="tel"> 
                             <label>Número de telefone:</label>
                             <input type="number" name="numero" id="tel">
+                        </div>
+                        <div class="peso_altura">
+                            <div>
+                                <label for="peso" class=>Peso:</label>
+                                <input type="number" name="Peso" min="0" placeholder="Kg">
+                            </div>
+                            <div>
+                                <label for="altura" class="text">Altura:</label>
+                                <input type="number" name="altura id="altura" min="0" step="0.1" placeholder="Metros">
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -63,7 +85,7 @@
                     </select>
                 </section>
                 <div class="caixa_botao">
-                    <input type="button" value="Enviar" name="enviar" class="botao" onclick="cadastro()">
+                    <input type="button" value="Enviar" name="enviar" class="botao">
                 </div>
             </form>
         </div>

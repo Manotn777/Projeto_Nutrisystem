@@ -36,6 +36,12 @@ main{
     grid-template-columns: 55% 45%;
 }
 
+.divisoria > div > div > *{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
 .divisoria div{
     margin: 5px 0px;
 }
@@ -77,6 +83,27 @@ label{
     padding-bottom: 20px;
 }
 
+.sexo{
+    display: flex;
+    justify-content: space-around;
+    
+    input{
+        width: auto;
+    }
+}
+
+.peso_altura{
+display: flex;
+
+    input{
+        width: 5em;
+    }
+}
+
+.text{
+    margin: 0px 0px 0px 15px;
+}
+
 .caixa_botao{
     width: 30%;
     margin: 20px auto;
@@ -88,4 +115,10 @@ label{
     text-align: center; 
     padding: 5px;
     cursor: pointer;
+}
+
+.mensagem{
+    color: #e63636;
+    margin: 3px 0px 0px 1px;
+    display: none;
 }

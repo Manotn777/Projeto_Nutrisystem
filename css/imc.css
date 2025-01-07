@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Jaldi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jaldi:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.secao1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFDCDE;
+}
+
+.apresent {
+  width: 50%;
+
+}
+
+.apresent img {
+  max-width: 100%;
+  height: auto;
+}
+
+.calcContainer {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+
+}
+
+.calcContainer p {
+  color: #000;
+  font-family: "Jost";
+  font-size: 40px;
+  font-weight: 400;
+  margin: 20px auto;
+}
+
+.calculadora {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
+}
+
+h1 {
+  margin-bottom: 35px;
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 42px;
+  font-weight: 800;
+}
+
+label {
+  display: block;
+  margin: 20px 0 15px 0;
+  color: #555;
+  font-family: "Julius Sans One";
+  font-size: 25px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: "DM Sans";
+  font-weight: 200;
+}
+
+button {
+  background-color: #CE0544;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 28px auto;
+  padding: 9px 45px 9px 45px;
+  border-radius: 10px;
+  width: 200px;
+  height: 60px;
+}
+
+#calcular {
+  color: #FFF;
+  font-family: "Jost";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #BE2355;
+}
+
+#resultado {
+  margin-bottom: 60px;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-weight: 800;
+  color: #000;
+}
+
+.secao2 {
+  width: 100%;
+  height: auto;
+  background-color: #184524;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+}
+
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+
+}
+
+.colorColuna {
+  background-color: #F1E2E5;
+  padding: 9px;
+  border: 2px solid #CBB4BA;
+}
+
+.tituloColuna {
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-weight: 500;
+  background-color: #F1E2E5;
+  padding: 1%;
+  border: 2px solid #CBB4BA;
+}
+
+.linhas {
+  background-color: #FFF;
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 27px;
+  font-weight: 200;
+  padding: 0.9%;
+  border-left: 2px solid #CBB4BA;
+  border-right: 2px solid #CBB4BA;
+}
+
+.apColor {
+  background-color: #02A22D;
+  border-right: 2px solid #02A22D;
+  border-bottom: 2px solid #02A22D;
+  border-left: 2px solid #02A22D;
+  padding: 7px;
+}
+
+.AP {
+  border-bottom: 2px solid #02A22D;
+}
+
+.apImc {
+  border-bottom: 2px solid #02A22D;
+}
+
+.apCom {
+  border-bottom: 2px solid #02A22D;
+}
+
+.euColor {
+  background-color: #02A22D;
+  border-right: 2px solid #02A22D;
+  border-bottom: 2px solid #02A22D;
+  border-left: 2px solid #02A22D;
+  padding: 7px;
+}
+
+.EU {
+  border-bottom: 2px solid #02A22D;
+}
+
+.euIMC {
+  border-bottom: 2px solid #02A22D;
+}
+
+.euCom {
+  border-bottom: 2px solid #02A22D;
+}
+
+.sobColor {
+  background-color: #FCA442;
+  border-right: 2px solid #FCA442;
+  border-bottom: 2px solid #FCA442;
+  border-left: 2px solid #FCA442;
+  padding: 7px;
+}
+
+.SOB {
+  border-bottom: 2px solid #FCA442;
+}
+
+.sobImc {
+  border-bottom: 2px solid #FCA442;
+}
+
+.sobCom {
+  border-bottom: 2px solid #FCA442;
+}
+
+.obColor {
+  background-color: #CE0544;
+  border-right: 2px solid #CE0544;
+  border-bottom: 2px solid #CE0544;
+  border-left: 2px solid #CE0544;
+  padding: 7px;
+}
+
+.OB {
+  border-bottom: 2px solid #CE0544;
+}
+
+.obImc {
+  border-bottom: 2px solid #CE0544;
+}
+
+.obCom {
+  border-bottom: 2px solid #CE0544;
+}
+
+.secao3 {
+  width: 100%;
+  height: auto;
+  background-color: #CE0544;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+.tabTitulo {
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-weight: 500;
+  border: 2px solid #FFCB91;
+  background: #FC8805;
+  padding: 0.9%;
+}
+
+.valTabela {
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-weight: 200;
+  border: 2px solid #FFCB91;
+  background: #FFF;
+  padding: 0.9%;
+}
+
+.secao3 p {
+  color: #FFF;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+/* Ajustes para tabletes */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .secao1 {
+    flex-direction: column;
+  }
+
+  .apresent {
+    display: none;
+
+  }
+
+  .calcContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  button {
+    width: 55%;
+  }
+
+  label {
+    font-size: 27px;
+  }
+
+  #resultado {
+    margin-bottom: 20px;
+  }
+
+  .secao3 p {
+    font-size: 21px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    margin-bottom: none;
+  }
+
+}
+
+/* Ajustes para celulares (largura menor que 768px) */
+@media (max-width: 767px) {
+  .secao1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .apresent {
+    display: none;
+  }
+
+  .calcContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input {
+    width: 84%;
+    font-size: 18px;
+  }
+
+  button {
+    width: 45%;
+    padding: 10px;
+  }
+
+  #calcular {
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  label {
+    font-size: 19px;
+  }
+
+  #resultado {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    
+  }
+
+.colorColuna {
+  background-color: #F1E2E5;
+  border: 2px solid #CBB4BA;
+}
+
+.tituloColuna {
+  font-size: 15px;
+}
+
+.linhas {
+  font-size: 15px;
+}
+
+
+.secao3 {
+  padding-top: 10%;
+
+}
+
+.tabTitulo {
+  font-size: 18px;
+  padding: 0.5%;
+}
+
+.valTabela {
+  font-size: 18px;
+}
+
+.secao3 p {
+  font-size: 20px;
+  margin: 12%;
+    margin-bottom: none;
+}
+
+}

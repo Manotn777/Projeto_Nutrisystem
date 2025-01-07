@@ -1,14 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculo do IMC</title>
+    <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="/css/imc.css">
 </head>
-<body>
-    
 
-    <script src="/script/imc.js"></script>
+<body>
+    <div class="secao1">
+        <div class="apresent">
+            <img src="img_imc/apresent_v.png" alt="Plano de fundo">
+        </div>
+        <div class="calcContainer">
+            <p>Descubra se você está no peso ideal</p>
+            <div class="calculadora">
+                <h1>Calculadora de IMC</h1>
+                <form action="imcForm">
+                    <label for="altura">Altura (em metros):</label>
+                    <input type="number" id="altura" step="0.01" placeholder="Ex: 1.75" required>
+
+                    <label for="altura">Peso (em kg):</label>
+                    <input type="number" id="peso" step="0.01" placeholder="Ex: 70" required>
+
+                    <button id="calcular" type="button">Calcular</button>
+                </form>
+                <div id="Resultado"></div>
+            </div>
+            <script src="/script/imc.js"></script>
+        </div>
+    </div>
+    <div class="secao2">
+        <table>
+            <tr class="table">
+                <th class="colorColuna"></th>
+                <th class="tituloColuna">Classificação</th>
+                <th class="tituloColuna">IMC(kg/m²)</th>
+                <th class="tituloColuna">Riscos de comorbidades</th>
+            </tr>
+            <tr>
+                <th class="apColor linhas"></th>
+                <th class="AP  linhas">Abaixo do Peso</th>
+                <th class="apImc linhas">
+                    < 18.50 </th>
+                <th class="apCom linhas">Baixo</th>
+            </tr>
+            <tr>
+                <th class="euColor"></th>
+                <th class="EU linhas">Eutrófico</th>
+                <th class="euIMC linhas">
+                    < 18.50 </th>
+                <th class="euCom linhas">Médio</th>
+            </tr>
+            <tr>
+                <th class="sobColor"></th>
+                <th class="SOB linhas">Sobrepeso</th>
+                <th class="sobImc linhas">
+                    25.00 - 29.99
+                </th>
+                <th class="sobCom linhas">Pouco elevado</th>
+            </tr>
+            <tr>
+                <th class="obColor"></th>
+                <th class="OB linhas">Obesidade grau I</th>
+                <th class="obImc linhas">
+                    30.00 - 34.99
+                </th>
+                <th class="obCom linhas">Elevado</th>
+            </tr>
+            <tr>
+                <th class="obColor"></th>
+                <th class="OB linhas">Obesidade grau II</th>
+                <th class="obImc linhas">
+                    35.00 - 39.99
+                </th>
+                <th class="obCom linhas">Muito elevado</th>
+            </tr>
+            <tr>
+                <th class="obColor"></th>
+                <th class="OB linhas">Obesidade grau III</th>
+                <th class="obImc linhas">
+                    ≥40.00
+                </th>
+                <th class="obCom linhas">Muitíssimo elevado</th>
+            </tr>
+        </table>
+    </div>
+    <div class="secao3">
+        <table>
+            <tr>
+                <th class="tabTitulo">Circunferência da cintura</th>
+                <th class="tabTitulo">Sexo</th>
+            </tr>
+            <tr>
+                <th class="valTabela">
+                    > 80.0 cm
+                </th>
+                <th class="valTabela">
+                    Para Mulheres
+                </th>
+            </tr>
+            <tr>
+                <th class="valTabela">
+                    > 94.0 cm
+                </th>
+                <th class="valTabela">
+                    Para Homens
+                </th>
+            </tr>
+        </table>
+        <p>Parâmetros de circunferência abdominal que estão relacionados com o risco de morbilidade</p>
+    </div>
 </body>
+
 </html>

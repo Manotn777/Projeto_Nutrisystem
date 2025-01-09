@@ -51,7 +51,7 @@ function validaEmail() {
 }
 
 function validaTamanho() {
-    if (campos[1].value.length < 10) {
+    if (campos[1].value.length < 9) {
         erro(1);
         return false;
     } else {

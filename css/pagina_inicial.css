@@ -101,6 +101,7 @@ main {
         justify-content: space-around;
         text-align: center;
         padding: 30px;
+        height: 100vh;
 
         div {
             margin: 0px 10px;
@@ -120,8 +121,17 @@ main {
 
         img,
         p {
-            font-size: 100%;
+            font-size: 130%;
+            font-weight: 900;
             width: 100%;
+        }
+
+        img{
+            height: 80%;
+        }
+
+        p{
+            height: 20%;
         }
     }
 
@@ -233,4 +243,26 @@ footer{
             font-size: 1.6em;
         }
     }
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 0.9s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    transition: all 0.9s;
+}
+
+#sec2:nth-child(2){
+    transition-delay: 400ms;
+}
+
+#sec2:nth-child(3){
+    transition-delay: 700ms;
 }

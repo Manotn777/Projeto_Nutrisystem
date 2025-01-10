@@ -69,3 +69,9 @@ div{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.mensagem{
+    color: #e63636;
+    margin: 3px 0px 0px 1px;
+    display: none;
+}

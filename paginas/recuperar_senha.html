@@ -19,7 +19,7 @@
     </header>
     <div class="container"> 
        <div class = "tela-senha"> 
-        <form>
+        <form id="form">
             <div class="titulo">
                 Esqueceu sua senha?
             </div>
@@ -29,12 +29,17 @@
             </div>
             <div>
                 <label>E-mail:</label>
-                <input type="e-mail" name="e-mail">
-                <button><a href="email_codigo.html">Enviar</a></button>
+                <input type="e-mail" name="e-mail" class="validacao" oninput="validaEmail()">
+                <div>
+                    <span class="mensagem">Coloque um email válido</span>
+                </div>
+                <button>Enviar</a></button>
             </div>
         </div>
     </div>
     </form>
+
+    <script src="/script/emailValido.js"></script>
 </body>
 
 </html>

@@ -44,6 +44,16 @@ a {
     text-decoration: none;
 }
 
+@keyframes aumentando {
+    0%{
+        transform: scale(1);
+    }
+    
+    100%{
+        transform: scale(1.25);
+    }
+}
+
 main {
 
     section#sec1 {
@@ -101,7 +111,6 @@ main {
         justify-content: space-around;
         text-align: center;
         padding: 30px;
-        height: 100vh;
 
         div {
             margin: 0px 10px;
@@ -124,14 +133,6 @@ main {
             font-size: 130%;
             font-weight: 900;
             width: 100%;
-        }
-
-        img{
-            height: 80%;
-        }
-
-        p{
-            height: 20%;
         }
     }
 
@@ -189,15 +190,23 @@ main {
         }
     }
 
+    
+
     .flex {
         display: flex;
         justify-content: center;
         text-align: center;
     }
 
+    .flex:hover{
+        animation: aumentando 1s alternate forwards;
+    }
+
+    
+
     hr{
         border: 3px solid #CFC13D;
-        width: 444px;
+        max-width: 444px;
         margin: 0px auto 60px;
     }
 
@@ -252,11 +261,25 @@ footer{
     transition: all 0.9s;
 }
 
+@media screen and (max-width: 700px) {
+    .hidden{
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0%);
+    }
+}
+
 .show{
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0%);
     transition: all 0.9s;
+}
+
+@keyframes telaVisivel{
+    100%{
+        
+    }
 }
 
 #sec2:nth-child(2){

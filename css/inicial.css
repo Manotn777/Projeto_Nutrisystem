@@ -24,7 +24,7 @@ header {
 
     .nav-lista {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding: 0;
         list-style: none;
     }
@@ -63,14 +63,27 @@ main {
         background-repeat: no-repeat;
         background-attachment: fixed;
         text-align: center;
-        height: 1050px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 200vh;
+
+        .telatoda{
+            height: 88vh;
+            display: flex;
+            justify-content: center;
+            align-content: flex-start;
+        }
+
+        .telatoda2{
+            align-content: flex-end;
+        }
 
         h1 {
             color: rgb(255, 255, 255);
             font-size: 4.75vw;
             text-shadow: 1px 1px 2px black;
             text-align: center;
-            padding: 200px 0px;
         }
 
         h2 {
@@ -111,6 +124,7 @@ main {
         justify-content: space-around;
         text-align: center;
         padding: 30px;
+        height: 100vh;
 
         div {
             margin: 0px 10px;
@@ -137,12 +151,20 @@ main {
     }
 
     section#sec3 {
-
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20%;
         div#fundo4 {
             background-image: url("../img/potes.png");
             background-size: cover;
             background-repeat: no-repeat;
             height: 190px;
+            align-content: flex-start;
+        }
+
+        #parte2{
+            align-content: center;
         }
 
         h3 {
@@ -222,6 +244,7 @@ footer{
         background-image: url("https://s3-alpha-sig.figma.com/img/774d/a023/3342f01a6e6167cc23f7ef529caaa9e6?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kVfULZBSQ3I0X3rRRjYpNi1c4MmnsIcLDxkpgeLaLW8vMFubRGjGhJQlGEwskbtU~drt2sdQzwyw0aXqyrfl-Jzdcw9RVtI8Bw7CaxRCk3Q2Qsa5MdbPtTKtzzv9P5bhgu8WSf11qIC-UUvmNVK3E6PjTZPhL7rgbPUyOo-I1l9B2xqIB65UDkzhxK4sk94vrjj3fk8ewT921E0RCbK8PU40OaWBMR14KqL3yvsrTyoW6sPZGWZrWt5Ct9MrqqbZJRfU14DBVwAc5wrxtj4RY3l5~wBctF2dAB6Q63rxLxPpG9Yp0IR0UZ9kBcfIICLLPE-4CkfvQzCrtSgBlFPvdg__");
         background-position: center center;
         background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -288,4 +311,28 @@ footer{
 
 #sec2:nth-child(3){
     transition-delay: 700ms;
+}
+
+@media screen and (min-width: 2000px) {
+    a.logo{
+        font-size: 8em;
+        padding: 20px 0px 0px 5px;
+    }
+    
+    a{
+        font-size: 1.8em;
+    }
+
+    main{
+        h2{
+        font-size: 2.5em;
+        }
+    }
+    h3{
+        font-size: 2em;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
 }

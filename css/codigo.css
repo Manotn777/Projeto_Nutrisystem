@@ -69,3 +69,26 @@ div{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+@media (max-width: 600px) {
+    .tela-codigo{
+        width: 80%;
+    }
+    
+    input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .container{
+        *{
+            font-size: 1.15em;
+        }
+
+        .titulo{
+            font-size: 1.50em;
+        }
+    }
+  }

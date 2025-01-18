@@ -75,3 +75,25 @@ div{
     margin: 3px 0px 0px 1px;
     display: none;
 }
+
+@media (max-width: 600px) {
+    .tela-senha{
+        width: 80%;
+    }
+    
+    input{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .container{
+        *{
+            font-size: 1.15em;
+        }
+
+        .titulo{
+            font-size: 1.50em;
+        }
+    }
+  }

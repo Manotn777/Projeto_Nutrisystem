@@ -194,6 +194,7 @@ main {
             font-weight: 300;
             font-size: 40px;
             font-weight: bold;
+            margin-left: 2px;
         }
     }
 
@@ -219,16 +220,16 @@ main {
     hr{
         border: 3px solid #CFC13D;
         max-width: 444px;
-        margin: 0px auto 60px;
+        margin: 0px auto 100px;
     }
 
 }
 
 footer{
     height: 450px;
+    margin-top: 200px;
 
     div#redes{
-        margin-top: 200px;
         height: 300px;
         background-image: url("https://s3-alpha-sig.figma.com/img/774d/a023/3342f01a6e6167cc23f7ef529caaa9e6?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kVfULZBSQ3I0X3rRRjYpNi1c4MmnsIcLDxkpgeLaLW8vMFubRGjGhJQlGEwskbtU~drt2sdQzwyw0aXqyrfl-Jzdcw9RVtI8Bw7CaxRCk3Q2Qsa5MdbPtTKtzzv9P5bhgu8WSf11qIC-UUvmNVK3E6PjTZPhL7rgbPUyOo-I1l9B2xqIB65UDkzhxK4sk94vrjj3fk8ewT921E0RCbK8PU40OaWBMR14KqL3yvsrTyoW6sPZGWZrWt5Ct9MrqqbZJRfU14DBVwAc5wrxtj4RY3l5~wBctF2dAB6Q63rxLxPpG9Yp0IR0UZ9kBcfIICLLPE-4CkfvQzCrtSgBlFPvdg__");
         background-position: center center;
@@ -273,14 +274,6 @@ footer{
     transition: all 0.9s;
 }
 
-@media screen and (max-width: 700px) {
-    .hidden{
-        opacity: 1;
-        filter: blur(0px);
-        transform: translateX(0%);
-    }
-}
-
 .show{
     opacity: 1;
     filter: blur(0px);
@@ -288,11 +281,6 @@ footer{
     transition: all 0.9s;
 }
 
-@keyframes telaVisivel{
-    100%{
-        
-    }
-}
 
 #sec2:nth-child(2){
     transition-delay: 400ms;
@@ -334,5 +322,79 @@ footer{
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        section#sec1 {
+            .telatoda{
+                align-items: self-start;
+                h1{
+                    font-size: 2em;
+                }
+            }
+        }
+
+        section#sec2 {
+            grid-template-columns: 1fr;
+            height: auto;
+            
+            p {
+                font-size: 2rem;
+            }
+        }
+
+        section#sec3 {
+            height: auto;
+        
+            h3 {
+                font-size: 40px;
+            }
+
+            div#par3 {
+                p {
+                    text-align: center;
+                    font-weight: 300;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-left: 2px;
+                }
+            }
+        
+            div#par4 {
+                p {
+                    text-align: center;
+                    font-weight: 300;
+                    font-size: 30px;
+                    font-family: "italianno", cursive;
+                }
+            }
+        }
+    }
+
+    footer{
+        margin-top: 30px;
+        div#redes{
+            div{
+                width: 100px;
+                height: 100px;
+
+                a{
+                    display: flex;
+                    justify-content: center;
+                }
+
+                img{
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    .hidden{
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0%);
     }
 }

@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-family: "jost", Arial, Helvetica, sans-serif;
 }
 
@@ -13,7 +13,7 @@ header {
     .logo {
         font-family: "italianno", cursive;
         color: #121112;
-        font-size: 4em;
+        font-size: 4rem;
         text-align: center;
         display: block;
     }
@@ -87,7 +87,6 @@ main {
         }
 
         h2 {
-            font-size: 2em;
             font-weight: 400;
             padding: 20px;
             background-color: white;
@@ -120,33 +119,28 @@ main {
     }
 
     section#sec2 {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
         text-align: center;
         padding: 30px;
         height: 100vh;
 
         div {
-            margin: 0px 10px;
+            margin: 0px auto;
+            padding: 20px 10px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
-
-        div#fundo1 {
-            width: 332px;
-        }
-
-        div#fundo2 {
-            width: 307px;
-        }
-
-        div#fundo3 {
-            width: 333px;
-        }
-
+        
         img,
         p {
-            font-size: 130%;
-            font-weight: 900;
+            font-size: 150%;
+            font-weight: 300;
             width: 100%;
+            margin: 5px auto;
         }
     }
 
@@ -212,8 +206,6 @@ main {
         }
     }
 
-    
-
     .flex {
         display: flex;
         justify-content: center;
@@ -223,8 +215,6 @@ main {
     .flex:hover{
         animation: aumentando 1s alternate forwards;
     }
-
-    
 
     hr{
         border: 3px solid #CFC13D;
@@ -236,7 +226,6 @@ main {
 
 footer{
     height: 450px;
-
 
     div#redes{
         margin-top: 200px;
@@ -272,7 +261,7 @@ footer{
 
         p{
             margin-bottom: 40px;
-            font-size: 1.6em;
+            font-size: 1.6rem;
         }
     }
 }
@@ -315,24 +304,35 @@ footer{
 
 @media screen and (min-width: 2000px) {
     a.logo{
-        font-size: 8em;
+        font-size: 8rem;
         padding: 20px 0px 0px 5px;
     }
     
     a{
-        font-size: 1.8em;
+        font-size: 1.8rem;
     }
-
+    
     main{
         h2{
-        font-size: 2.5em;
+            font-size: 2.5rem;
         }
-    }
-    h3{
-        font-size: 2em;
-    }
+        h3{
+            font-size: 2rem;
+        }
 
-    p{
-        font-size: 1.5em;
+        section#sec2, section#sec3 {
+            p{
+                font-size: 2rem;
+            }
+
+            div#par3 {
+                p {
+                    text-align: center;
+                    font-weight: 300;
+                    font-size: 4rem;
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }

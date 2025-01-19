@@ -47,7 +47,7 @@ main {
     font-family: "jost", Arial, Helvetica, sans-serif;
 
     section#sec1 {
-        background-image: url("/img/fundo.png");
+        background-image: url("../img/fundo.png");
         background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -128,10 +128,9 @@ main {
     section#sec3 {
 
         div#fundo4 {
-            background-image: url("/img/potes.png");
+            background-image: url("../img/potes.png");
             background-size: cover;
             background-repeat: no-repeat;
-
             height: 190px;
         }
 

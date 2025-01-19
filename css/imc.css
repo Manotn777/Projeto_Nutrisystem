@@ -7,6 +7,43 @@ body {
   padding: 0;
 }
 
+header {
+  font-family: "inter", Arial, Helvetica, sans-serif;
+
+  .logo {
+      font-family: "italianno", cursive;
+      color: #121112;
+      font-size: 4em;
+      text-align: center;
+      display: block;
+  }
+
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .menu-res {
+      width: 10px;
+  }
+
+  .nav-lista {
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+      list-style: none;
+  }
+
+  ul>li {
+      display: inline-block;
+      padding: 10px 5px;
+
+      a:hover {
+          text-decoration: underline;
+      }
+  }
+}
+
 .secao1 {
   width: 100%;
   height: auto;

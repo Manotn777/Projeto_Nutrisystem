@@ -7,7 +7,7 @@
     <title>Esqueci minha senha - Nutri System</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/recuperarsenha.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/codigo.css'>
     <script src='main.js'></script>
 </head>
 
@@ -18,28 +18,22 @@
         </nav>
     </header>
     <div class="container"> 
-       <div class = "tela-senha"> 
-        <form id="form">
+       <div class = "tela-codigo"> 
+        <form>
             <div class="titulo">
-                Esqueceu sua senha?
+                Enviamos um código para seu email
             </div>
             <div>
                 <br>
-                Insira seu e-mail. Vamos mandar um código para ele.
+                Insira seu Código aqui.
             </div>
             <div>
-                <label>E-mail:</label>
-                <input type="e-mail" name="e-mail" class="validacao" oninput="validaEmail()">
-                <div>
-                    <span class="mensagem">Coloque um email válido</span>
-                </div>
-                <button>Enviar</a></button>
+                <input type="number" name="number">
+                <button><a href="troca_Senha.html">Enviar</a></button>
             </div>
         </div>
     </div>
     </form>
-
-    <script src="../script/emailValido.js"></script>
 </body>
 
 </html>

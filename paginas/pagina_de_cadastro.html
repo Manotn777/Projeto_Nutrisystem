@@ -5,9 +5,15 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Cadastro - Nutri System</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/pagina_de_cadastro.css'>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/cadastro.css'>
 </head>
 <body>
+    <header>
+        <nav>
+            <a class="logo" href="../pagina_inicial.html">Nutri System</a>
+        </nav>
+    </header>
     <main>
         <div class="telalogin">
             <form id="form">
@@ -16,25 +22,25 @@
                     <div>
                         <div>
                             <label> Nome completo:</label>
-                            <input type="text" name="nome">
+                            <input type="text" name="nome" placeholder="Dígite seu nome">
                         </div>
                         <div>
                             <label>E-mail:</label>
-                            <input type="email" name="email" class="validacao" oninput="validaEmail()">
+                            <input type="email" name="email" class="validacao" placeholder="Dígite seu email" oninput="validaEmail()">
                             <div>
                                 <span class="mensagem">Coloque um email válido</span>
                             </div>
                         </div>
                         <div>
                             <label>Senha:</label>
-                            <input type="password" name="senha" class="validacao" oninput="validaTamanho()">
+                            <input type="password" name="senha" class="validacao" placeholder="Dígite sua senha" oninput="validaTamanho()">
                             <div>
                                 <span class="mensagem">A senha deve ter no mínimo 8 dígitos</span>
                             </div>
                         </div>
                         <div>
                             <label>Confirmar senha:</label>
-                            <input type="password" name="senha" class="validacao" oninput="validaSenha()">
+                            <input type="password" name="senha" class="validacao" placeholder="Confirme sua senha" oninput="validaSenha()">
                             <div>
                                 <span class="mensagem">Senhas devem ser conpatíveis</span>
                             </div>
@@ -43,7 +49,10 @@
                     <div class="parte">
                         <div>
                             <label>Data de nascimento:</label>
-                            <input type="date" name="data">
+                            <input type="date" name="data" class="validacao">
+                            <div>
+                                <span class="mensagem">Campos Obrigatório</span>
+                            </div>
                         </div>
                         <div>
                             <label> Sexo:</label>
@@ -56,16 +65,21 @@
                         </div>
                         <div class="tel"> 
                             <label>Número de telefone:</label>
-                            <input type="number" name="numero" id="tel">
+                            <input type="number" name="numero" id="tel" placeholder="DD 000000000" class="validacao" oninput="validaNumero()">
+                            <div>
+                                <span class="mensagem">Campos Obrigatório</span>
+                            </div>
                         </div>
                         <div class="peso_altura">
                             <div>
                                 <label for="peso" class=>Peso:</label>
-                                <input type="number" name="Peso" min="0" placeholder="Kg">
+                                <input type="number" name="Peso" min="0" placeholder="EX: 70" class="validacao" oninput="validaCampos()">
+                                <span class="mensagem">Campos Obrigatório</span>
                             </div>
                             <div>
                                 <label for="altura" class="text">Altura:</label>
-                                <input type="number" name="altura id="altura" min="0" step="0.1" placeholder="Metros">
+                                <input type="number" name="altura id="altura" min="0" step="0.1" placeholder="EX:1.70" class="validacao" oninput="validaCampos()">
+                                <span class="mensagem">Campos Obrigatório</span>
                             </div>
                         </div>
                     </div>
@@ -85,12 +99,12 @@
                     </select>
                 </section>
                 <div class="caixa_botao">
-                    <input type="button" value="Enviar" name="enviar" class="botao">
+                    <input type="submit" value="Enviar" name="enviar" class="botao">
                 </div>
             </form>
         </div>
     </main>
 
-    <script src="/script/cadastro.js"></script>
+    <script src="../script/cadastro.js"></script>
 </body>
 </html>

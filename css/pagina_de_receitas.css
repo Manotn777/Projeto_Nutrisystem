@@ -22,7 +22,7 @@ header {
 }
 
 .title {
-  font-size: clamp(2.5rem, 5vw, 100px);
+  font-size: clamp(6.875rem, 5vw, 110px);
   font-family: Italianno, cursive;
   font-weight: 400;
   text-align: center;
@@ -140,7 +140,7 @@ nav{
   word-wrap: break-word;
   max-width: 710px;
   position: absolute;
-  left: 50%;
+  left: 55%;
   text-shadow: 2px 2px 4px #FFFFFF;
 }
 
@@ -159,13 +159,14 @@ nav{
   font-size: 2.188rem; 
   font-weight: 600;
   word-wrap: break-word;
-  margin-top: 2.225rem;
+  margin-top: 1.625rem;
   margin-bottom: 1.688rem;
 }
 .container {
   width: 58.5rem;
   height: 36.375rem;
   position: relative;
+  margin-bottom: 1.688rem;
 }
 
 .card {
@@ -209,7 +210,7 @@ nav{
   width: 19.5rem;
   height: 18.188rem;
   position: absolute;
-  background: white;
+  background: #FFF;
   transition: all .3s ease-in-out;
   
 }
@@ -234,12 +235,12 @@ nav{
   position: absolute;
   left: 0.75rem;
   top: 12rem;
-  background: white;
+  background: #FFF;
 }
 
 .text {
   position: absolute;
-  color: black;
+  color: #000;
   font-size: 1.25rem;
   font-family: Inter, sans-serif;
   font-weight: 500;
@@ -289,7 +290,8 @@ nav{
 }
 
 .text-rodape {
-  left: 26.313rem;
+  left: 26%;
+  right: 26%;
   top: 1.625rem;
   position: absolute;
   color: #CE0544;
@@ -297,7 +299,7 @@ nav{
   font-family: "Inter";
   font-weight: 600;
   word-wrap: break-word;
-  text-shadow: 2px 2px 4px #FFFFFF;
+  text-shadow: 1px 1px 2px #FFF;
 }
 
 .rodape img {

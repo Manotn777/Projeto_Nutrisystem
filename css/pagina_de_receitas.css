@@ -12,15 +12,6 @@ body {
   background-color: #FFF;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .title {
   font-size: clamp(6.875rem, 5vw, 110px);
   font-family: Italianno, cursive;

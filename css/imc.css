@@ -7,42 +7,105 @@ body {
   padding: 0;
 }
 
-header {
-  font-family: "inter", Arial, Helvetica, sans-serif;
-
-  .logo {
-      font-family: "italianno", cursive;
-      color: #121112;
-      font-size: 4em;
-      text-align: center;
-      display: block;
-  }
-
-  a{
-    text-decoration: none;
-    color: #000;
-  }
-
-  .menu-res {
-      width: 10px;
-  }
-
-  .nav-lista {
-      display: flex;
-      justify-content: space-around;
-      padding: 0;
-      list-style: none;
-  }
-
-  ul>li {
-      display: inline-block;
-      padding: 10px 5px;
-
-      a:hover {
-          text-decoration: underline;
-      }
-  }
+a{
+  text-decoration: none;
+  color: #000;
 }
+
+.title {
+  font-size: clamp(6rem, 5vw, 110px);
+  font-family: Italianno, cursive;
+  font-weight: 400;
+  text-align: center;
+  color: #121112;
+  word-wrap: break-word;
+}
+
+nav{
+  width: 100%;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 20px 0px;
+}
+
+.menu a {
+  font-size: clamp(1rem, 2vw, 20px);
+  font-weight: 300;
+  color: black;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  float: left;
+  position: relative;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 17.25rem;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: clamp(0.4rem, 1.5vw, 29px);
+}
+
+.opcao-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 360px;
+  z-index: 1;
+}
+
+.opcao-content a {
+  display: block;
+  padding: 2.5px 5px;
+  text-decoration: none;
+  color: #333;
+  font-size: clamp(0.2rem, 1.3vw, 29px);
+}
+
+.dropdown-content a:hover {
+  background-color: #ce054543;
+  font-weight: 500;
+}
+
+.opcao-content a:hover {
+  background-color: #ce054543;
+  font-weight: 500;
+}
+
+.menu ul li:hover .opcao-content {
+  display: block;
+}
+
+.menu ul li:hover .dropdown-content {
+  display: block;
+}
+
 
 .secao1 {
   width: 100%;

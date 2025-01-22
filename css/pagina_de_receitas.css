@@ -172,7 +172,7 @@ nav{
 .card {
   width: 19.5rem;
   height: 18.188rem;
-  position: absolute;
+  position: relative;
 }
 
 .card:nth-child(1) {

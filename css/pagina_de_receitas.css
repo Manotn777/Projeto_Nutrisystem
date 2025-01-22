@@ -279,8 +279,8 @@ nav{
   height: 4.688rem;
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .text-rodape {

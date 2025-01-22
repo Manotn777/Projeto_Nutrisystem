@@ -295,6 +295,7 @@ nav{
 
 .text-rodape {
   text-align: center;
+  align-items: center;
   position: absolute;
   color: #FFF;
   font-size: 1.25rem;
